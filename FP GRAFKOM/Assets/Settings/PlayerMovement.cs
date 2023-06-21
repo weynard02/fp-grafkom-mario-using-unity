@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
+
+    public AudioSource playSound;
     public float speed = 12f;
     public float gravity = -15f;
     public float jumpHeight = 5f;
@@ -32,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded){
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            playSound.Play();
         }
 
         velocity.y += gravity * Time.deltaTime;
