@@ -7,12 +7,14 @@ public class PlayerCollision : MonoBehaviour
     public AudioSource playSound;
     public AudioSource mainTheme;
     public AudioSource win;
+    public AudioSource respawn;
 
     public TMP_Text scoreText;
 
     private int scoreNum;
 
     public GameObject complete;
+    public GameObject character;
 
     public PlayerMovement movement;
 
@@ -36,6 +38,11 @@ public class PlayerCollision : MonoBehaviour
             Destroy(collisionInfo.gameObject);
             scoreNum+=1;
             scoreText.text = scoreNum + "/21";
+        }
+
+        else if (collisionInfo.collider.tag == "Monster") {
+            character.transform.position = new Vector3(447f, 10.9f, 199.84f);
+            respawn.Play();
         }
 
         else if (collisionInfo.collider.tag == "Finish" && !complete.activeSelf) {
