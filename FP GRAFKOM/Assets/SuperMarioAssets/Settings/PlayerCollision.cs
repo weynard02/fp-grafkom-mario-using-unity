@@ -19,7 +19,7 @@ public class PlayerCollision : MonoBehaviour
 
     void Start() {
         scoreNum = 0;
-        scoreText.text = scoreNum + "/3";
+        scoreText.text = scoreNum + "/21";
     }
 
     void OnCollisionEnter (Collision collisionInfo) {
@@ -35,7 +35,7 @@ public class PlayerCollision : MonoBehaviour
             playSound.Play();
             Destroy(collisionInfo.gameObject);
             scoreNum+=1;
-            scoreText.text = scoreNum + "/3";
+            scoreText.text = scoreNum + "/21";
         }
 
         else if (collisionInfo.collider.tag == "Finish" && !complete.activeSelf) {
