@@ -4381,7 +4381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aecb36c549415ff478df92f668ce12db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.8
+      value: 33.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aecb36c549415ff478df92f668ce12db, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4438,6 +4438,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aecb36c549415ff478df92f668ce12db, type: 3}
       insertIndex: -1
       addedObject: {fileID: 254671218}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aecb36c549415ff478df92f668ce12db, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 254671220}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aecb36c549415ff478df92f668ce12db, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 254671219}
   m_SourcePrefab: {fileID: 100100000, guid: aecb36c549415ff478df92f668ce12db, type: 3}
 --- !u!4 &254671216 stripped
 Transform:
@@ -4468,8 +4474,49 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 21.781569, y: 24.371819, z: 25.923569}
-  m_Center: {x: -1.0761402, y: 1.65037, z: 0.5679803}
+  m_Size: {x: 21.781569, y: 25.087214, z: 30.584122}
+  m_Center: {x: -1.0761402, y: 1.2926723, z: 2.8982625}
+--- !u!114 &254671219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254671217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9524072ede2d14fb6de733d2e2e1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  isMoveRight: 1
+--- !u!54 &254671220
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254671217}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &256890524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5799,7 +5846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aecb36c549415ff478df92f668ce12db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 70.773285
+      value: 69.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aecb36c549415ff478df92f668ce12db, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20765,7 +20812,7 @@ GameObject:
   - component: {fileID: 1167192788}
   m_Layer: 6
   m_Name: Quad
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26218,6 +26265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cartoon Wood Fence (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79149a26eb019ad49b1027c05705a004, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27145,7 +27196,7 @@ GameObject:
   - component: {fileID: 1479173145}
   m_Layer: 6
   m_Name: Quad (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31577,6 +31628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cartoon Wood Fence (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79149a26eb019ad49b1027c05705a004, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34397,7 +34452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aecb36c549415ff478df92f668ce12db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 69.78
+      value: 69.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aecb36c549415ff478df92f668ce12db, type: 3}
       propertyPath: m_LocalPosition.y
